@@ -1,0 +1,101 @@
+@import '../../../@theme/styles/theme-palette-colors.scss';
+
+.avatar-s {
+  width: 50px; /* Ajustez la taille selon vos besoins */
+  height: 50px; /* Ajustez la taille selon vos besoins */
+  border-radius: 30%; /* Pour rendre l'image circulaire */
+  overflow: hidden; /* Pour s'assurer que l'image ne dépasse pas les bords */
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Pour s'assurer que l'image couvre toute la zone */
+  }
+}
+
+.employee-list-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid var(--accent-300);
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  .avatar {
+    margin-right: 15px;
+  }
+
+  .employee-info {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .employee-name {
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    .employee-date {
+      color: var(--accent-500);
+      font-size: 0.875rem;
+    }
+
+    .employee-emotion {
+      font-size: 0.875rem;
+      color: var(--primary-500);
+    }
+  }
+}
+
+.able-user-group .avatar {
+  width: 30px;
+  height: 30px;
+}
+
+.chart-body {
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: 8px;
+  background: var(--accent-100);
+}
+
+.border {
+  border: 1px solid var(--accent-300);
+}
+
+.border-50 {
+  border-radius: 50%;
+}
+
+.user-status {
+  font-size: 0.75em !important;
+  padding: 0.25em 0.9em;
+  display: inline-block;
+  border-radius: 8px;
+}
+
+.card-head {
+  margin: 0px 10px;
+}
+
+.income-value {
+  background: var(--accent-100);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.gap {
+  gap: 1rem;
+
+  .dot {
+    border-radius: 50%;
+    background: map-get($yellow-theme, 500);
+
+    &.primary {
+      background: var(--primary-500);
+    }
+  }
+}

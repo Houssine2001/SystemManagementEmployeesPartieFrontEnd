@@ -1,0 +1,12 @@
+<div *ngIf="loading">Chargement des données...</div>
+
+<div *ngIf="error" class="error">{{ error }}</div>
+
+<div *ngIf="employee">
+  <h2>Détails de l'employé</h2>
+  <p>ID: {{ employee.id }}</p>
+  <p>Nom: {{ employee.nom }}</p>
+  <p>Émotion: {{ employee.emotion }}</p>
+  <p>Date Emotion: {{ employee.dateEmotion }}</p>
+  <p>Score Emotion: {{ employee.emotionScore }}</p>
+</div>
